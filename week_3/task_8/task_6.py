@@ -13,6 +13,9 @@ age = int(input("Enter your age: "))
 
 #2. Second process
 academic_qualification = input("Do you have five distinctions (As and Bs) in relevant subjects in WAEC/WASSCE exams including English and Mathematics ?(True or False): ").title()
+Mathematics = input("Enter your distinction in Mathematics: ").upper()
+English =  input("Enter your distinction in English: ").upper()
+other_qualifications = input("Do you have at least three distinctions in other relevant subjects in WAEC/WASSCE exams(Yes/No):  ").title()
 utme = int(input("Enter your UTME result: "))
 
 # 3. Third process
@@ -30,7 +33,7 @@ has_post_utme = post_utme
 
 
 
-eligibility = (age >= 16 and has_academic_qualification) and (utme >= 200 and is_choice ) and (has_post_utme) and (utme_score >= 200 )
+eligibility = (age >= 16 and has_academic_qualification) and (utme >= 200 and is_choice ) and (has_post_utme) and (utme_score >= 200 ) and (Mathematics == "A" or Mathematics == "B" ) and (English == "A" or English == "B" ) and (other_qualifications == "Yes")
 
 # 5. Fifth process
-print(print(f"Candidate: {name}\nAge: {age}\nSchool: {secondary_school}\nPost-Utme: {utme} \nPost-Utme participation : {post_utme} \nEligible: {eligibility}"))
+print(print(f"------- Student Eligibility Status -------\nCandidate: {name}\nAge: {age}\nSchool: {secondary_school}\nMathematics distinction: {Mathematics}\nEnglish Language distinction: {English}\nDo you have at least three distinctions in other relevant subjects in WAEC/WASSCE exams: {other_qualifications}\nPost-Utme: {utme} \nPost-Utme participation : {post_utme} \nEligible: {eligibility}"))

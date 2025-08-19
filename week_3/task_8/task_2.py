@@ -34,6 +34,7 @@ academic_qualifications = input("Do you have five distinctions (As and Bs) in re
 
 Mathematics = input("Enter your distinction in Mathematics: ").upper()
 English =  input("Enter your distinction in English: ").upper()
+other_qualifications = input("Do you have at least three distinctions in other relevant subjects in WAEC/WASSCE exams(Yes/No):  ").title()
 
     
 
@@ -42,6 +43,6 @@ is_enrolled = Enrollment
 has_scholarships = other_scholarships
 has_qualifications = academic_qualifications
 # 2. Display
-eligibility = (is_citizen and is_enrolled ) and (has_qualifications and has_scholarships) and (Mathematics == "A" or Mathematics == "B" ) and (English == "A" or English == "B" )
+eligibility = (is_citizen and is_enrolled ) and (has_qualifications and has_scholarships) and (Mathematics == "A" or Mathematics == "B" ) and (English == "A" or English == "B" ) and (other_qualifications == "Yes")
 
-print(f"------- STUDENT Eligibility Status -------\nCandidate: {name}\nAge: {age}\nSchool: {school}\nEligible: {eligibility}")
+print(f"------- Student Eligibility Status -------\nCandidate: {name}\nAge: {age}\nSchool: {school}\nMathematics distinction: {Mathematics}\nEnglish Language distinction: {English}\nDo you have at least three distinctions in other relevant subjects in WAEC/WASSCE exams: {other_qualifications}\nEligible: {eligibility}")
