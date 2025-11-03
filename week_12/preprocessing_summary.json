@@ -1,0 +1,25 @@
+{
+  "original_shape": [
+    367,
+    15
+  ],
+  "final_shape": [
+    367,
+    15
+  ],
+  "selected_features": [
+    "Married",
+    "Dependents",
+    "Education",
+    "Self_Employed",
+    "LoanAmount",
+    "Property_Area",
+    "ApplicantIncome_log",
+    "LoanAmount_log"
+  ],
+  "train_samples": 219,
+  "val_samples": 74,
+  "test_samples": 74,
+  "scaling_method": "StandardScaler",
+  "outlier_treatment": "IQR_capping"
+}
