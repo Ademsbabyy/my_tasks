@@ -4,3 +4,8 @@ scikit-learn
 seaborn
 matplotlib
 scipy
+xgboost
+lightgbm
+shap
+google
+load_dotenv
